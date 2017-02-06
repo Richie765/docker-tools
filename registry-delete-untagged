@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. settings
+
+docker run --rm \
+  -v $REGISTRY_VOLUME:/registry \
+  -v $PWD/_delete_untagged:/delete_untagged \
+  -e URL=$REGISTRY_URL \
+  -e USER=$REGISTRY_USER \
+  -e PASS=$REGISTRY_PASS \
+  ubuntu /delete_untagged

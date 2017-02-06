@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Run this script using 'registry-delete-untagged'
+# Needs to be run inside the docker component
+
+apt update && apt install -y curl
+
+cd /registry/docker/registry/v2/repositories/
+
+comm -23 \
+  <(find . -mindepth 5 -maxdepth 5 | grep _manifests/revisions | perl -pe 's|^\./(.*?)/.*(sha256)/(.*)$|\1/manifests/\2:\3|' | sort) \
+  <(find . -mindepth 7 -maxdepth 7 | grep _manifests/tags | perl -pe 's|^\./(.*?)/.*(sha256)/(.*)$|\1/manifests/\2:\3|' | sort) \
+  | xargs -I{} curl --silent --user $USER:$PASS -X DELETE $URL/v2/{}

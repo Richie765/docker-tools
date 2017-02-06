@@ -1,0 +1,9 @@
+REGISTRY_URL=https://registry.domain.com:5000
+REGISTRY_USER=username
+REGISTRY_PASS=password
+
+# If using a named volume
+REGISTRY_VOLUME=registry
+
+# If your registry is not in a named volume, specify the path
+# REGISTRY_VOLUME=$HOME/registry
