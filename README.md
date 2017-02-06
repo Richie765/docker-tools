@@ -1,17 +1,17 @@
 # docker-tools
 
-# registry-delete-untagged
+## registry-delete-untagged
 
 Finds out untagged manifests and delete them.
 
 
-# Setup
+## Setup
 
 * Copy settings-sample to settings
 * Edit the file with the correct settings
 
 
-# Usage
+## Usage
 
 USE AT YOUR OWN RISK
 
@@ -24,15 +24,15 @@ Afterwards you can do a garbage collection to delete the files for real
     docker exec registry /bin/registry garbage-collect /etc/docker/registry/config.yml
     
     
-# Known issues
+## Known issues
 
 * The script has not been tested very well but it seems to work
-* The script tries to delete things that have been deleted before
+* The script tries to delete things that have been deleted before (MANIFEST_UNKNOWN)
 * Some things seem to be left behind that could have been deleted
 * There's probably a better way to get an ubuntu container with curl inside
 
 
-# Pull requests
+## Pull requests
 
 Yes please!
 
