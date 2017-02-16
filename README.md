@@ -1,5 +1,12 @@
 # docker-tools
 
+## Note
+
+I just found a script that probably works better. You can find it here:
+
+* https://gist.github.com/mortensteenrasmussen/512f0566dbc3ef1cc4a2c47dd9cdb973
+* https://github.com/docker/distribution/issues/2190#issuecomment-279343010
+
 ## registry-delete-untagged
 
 Finds out untagged manifests and delete them.
