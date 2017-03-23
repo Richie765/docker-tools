@@ -2,11 +2,12 @@
 
 ## Note
 
-I just found a script that probably works better. You can find it here:
+After writing my own script, I found several other scripts that probably work better. You can find them here:
 
 * https://gist.github.com/mortensteenrasmussen/512f0566dbc3ef1cc4a2c47dd9cdb973
 * https://github.com/docker/distribution/issues/2190#issuecomment-279343010
 * https://github.com/ricardobranco777/purge_registry.sh
+* https://github.com/burnettk/delete-docker-registry-image
 
 ## registry-delete-untagged
 
