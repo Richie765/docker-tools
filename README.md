@@ -4,6 +4,7 @@
 
 After writing my own script, I found several other scripts that probably work better. You can find them here:
 
+* https://github.com/mortensteenrasmussen/docker-registry-manifest-cleanup
 * https://gist.github.com/mortensteenrasmussen/512f0566dbc3ef1cc4a2c47dd9cdb973
 * https://github.com/docker/distribution/issues/2190#issuecomment-279343010
 * https://github.com/ricardobranco777/purge_registry.sh
